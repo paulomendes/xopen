@@ -19,4 +19,4 @@ Install
 
 If you are excited to install our short and usefull script just copy and paste this command line in your terminal
 
-	curl -L https://raw.github.com/guilhermeandrade/popen/master/install.sh | sh
+	curl -L https://raw.github.com/guilhermeandrade/xopen/master/install.sh | sh
