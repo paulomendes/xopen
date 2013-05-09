@@ -27,7 +27,7 @@ sudo mv ~/.xopen/xopen /usr/bin/xopen
 
 echo "\033[0;34mClearing all the fucking mess\033[0m"
 
-echo "\033[0;34mContratulations!!! xopen was installed!!!\033[0m"
+echo "\033[0;34mCongratulations!!! xopen was installed!!!\033[0m"
 echo ""
 echo ""
 echo "\033[0;34m   _  ______  ____  _______   __\033[0m"

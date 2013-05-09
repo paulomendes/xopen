@@ -33,4 +33,4 @@ function seek_and_project {
 seek_and_project "xcworkspace"
 seek_and_project "xcodeproj"
 
-echo "There is no project in this folder buddy!"
+echo "There is no project in this folder, buddy!"
