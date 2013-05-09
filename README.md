@@ -11,8 +11,7 @@ This is a short and usefull script to open your xcode projects inside of your te
 Usage
 -----
 
-Inside of your project folder just type
-	*xopen*
+Inside of your project folder just type *xopen*
 
 Install
 -------
