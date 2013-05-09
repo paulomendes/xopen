@@ -2,6 +2,7 @@ if [  -e /usr/bin/xopen ]; then
 	echo "You already have xopen installed. You already are a happy guy with a fantastic shor usefull script"
 	echo "Do you want replace it [n/Y]"
 	
+	read -t 1 -n 10000 discard 
 	read -e opt
 
 	if [[ ${opt} == "n" ]]; then
@@ -21,7 +22,7 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/guilhermeandrad
   exit
 }
 
-echo "\033Almost There\033[0m"
+echo "\033[0;34mAlmost There\033[0m"
 
 sudo mv ~/.xopen/xopen /usr/bin/xopen
 
