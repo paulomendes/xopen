@@ -2,7 +2,7 @@ if [  -e /usr/bin/xopen ]; then
 	echo "You already have xopen installed. You already are a happy guy with a fantastic shor usefull script"
 	echo "Do you want replace it [n/Y]"
 	
-	read opt
+	read opt <tty
 
 	if [[ ${opt} == "n" ]]; then
 		exit
