@@ -8,7 +8,7 @@ if [  -e /usr/bin/xopen ]; then
 		exit
 	fi
 fi
-
+sudo rm -f /usr/bin/xopen
 echo "\033[0;34mGetting xopen DUDE!\033[0m"
 
 hash git >/dev/null && /usr/bin/env git clone https://github.com/guilhermeandrade/xopen.git ~/.xopen || {
@@ -23,5 +23,14 @@ sudo mv ~/.xopen/xopen /usr/bin/xopen
 echo "\033[0;34mClearing all the fucking mess\033[0m"
 
 echo "\033[0;34mContratulations!!! xopen was installed!!!\033[0m"
+echo ""
+echo ""
+echo "\033[0;34m   _  ______  ____  _______   __\033[0m"
+echo "\033[0;34m  | |/ / __ \/ __ \/ ____/ | / /\033[0m"
+echo "\033[0;34m  |   / / / / /_/ / __/ /  |/ / \033[0m"
+echo "\033[0;34m /   / /_/ / ____/ /___/ /|  /  \033[0m"
+echo "\033[0;34m/_/|_\____/_/   /_____/_/ |_/   \033[0m"
+echo ""
+echo ""  
 
 rm -rf ~/.xopen
