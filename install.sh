@@ -1,6 +1,12 @@
-if [  -d /usr/bin/popen ]; then
+if [  -e /usr/bin/popen ]; then
 	echo "You already have popen installed. You already are a happy guy with a fantastic shor usefull script"
-	exit
+	echo "Do you want replace it [n/Y]"
+	
+	read opt
+
+	if [[ ${opt} == "n" ]]; then
+		exit
+	fi
 fi
 
 echo "\033[0;34mGetting popen DUDE!\033[0m"
