@@ -2,7 +2,10 @@ if [  -e /usr/bin/xopen ]; then
 	echo "You already have xopen installed. You already are a happy guy with a fantastic shor usefull script"
 	echo "Do you want replace it [n/Y]"
 	
-	read -t 1 -n 10000 discard 
+	while read -t 0 notused; do
+   		read input
+   		echo "ignoring $input"
+	done
 	read -e opt
 
 	if [[ ${opt} == "n" ]]; then
