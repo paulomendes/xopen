@@ -12,7 +12,7 @@ Usage
 -----
 
 Inside of your project folder just type
-	$ popen
+	*xopen*
 
 Install
 -------
