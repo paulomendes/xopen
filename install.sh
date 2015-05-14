@@ -9,7 +9,7 @@ if [ -d ~/.xopen ]; then
 	rm -rf ~/.xopen
 fi
 
-hash git >/dev/null && /usr/bin/env git clone https://github.com/guilhermeandrade/xopen.git ~/.xopen || {
+hash git >/dev/null && /usr/bin/env git clone https://github.com/paulomendes/xopen.git ~/.xopen || {
   echo "git not installed"
   exit
 }
