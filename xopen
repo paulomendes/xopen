@@ -23,7 +23,7 @@ function seek_and_project {
 
 	if $found_flag; then
 		echo "Opening ${project_file}"
-		open ${project_file}
+		open "${project_file}"
 		exit
 	fi
 
