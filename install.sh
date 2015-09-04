@@ -17,7 +17,7 @@ hash git >/dev/null && /usr/bin/env git clone https://github.com/paulomendes/xop
 sudo rm -f /usr/bin/xopen
 echo "\033[0;34mAlmost There\033[0m"
 
-sudo mv ~/.xopen/xopen /usr/bin/xopen
+sudo mv ~/.xopen/xopen /usr/local/bin/xopen
 
 echo "\033[0;34mClearing all the fucking mess\033[0m"
 
