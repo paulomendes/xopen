@@ -6,7 +6,6 @@ workspace_files=$(ls -1 . | grep xcworkspace | wc -l)
 xproject_files=$(ls -1 . | grep xcodeproj | wc -l)
 
 function seek_and_project {
-
 	kind=$1
 	count=$(ls -1 . | grep ${kind} | wc -l)
 	found_flag=false
@@ -22,12 +21,16 @@ function seek_and_project {
 	done
 
 	if $found_flag; then
-		echo "Opening ${project_file}"
-		open "${project_file}"
+		current_tools_path=`xcode-select -p`
+		contents_path=${current_tools_path%/*}
+
+		xcode_path=${contents_path}"/MacOS/Xcode"
+		full_project_path=$(pwd)/$project_file
+
+		echo "Opening ${full_project_path}"
+		nohup ${xcode_path} "${full_project_path}" </dev/null >/dev/null 2>&1 &
 		exit
 	fi
-
-	
 }
 
 seek_and_project "xcworkspace"
