@@ -23,12 +23,10 @@ function seek_and_project {
 	if $found_flag; then
 		current_tools_path=`xcode-select -p`
 		contents_path=${current_tools_path%/*}
+		xcode_app_path=${contents_path%/*}
 
-		xcode_path=${contents_path}"/MacOS/Xcode"
-		full_project_path=$(pwd)/$project_file
-
-		echo "Opening ${full_project_path}"
-		nohup ${xcode_path} "${full_project_path}" </dev/null >/dev/null 2>&1 &
+		echo "Opening ${project_file}"
+		open -a $xcode_app_path $project_file
 		exit
 	fi
 }
