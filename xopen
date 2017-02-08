@@ -2,9 +2,6 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-workspace_files=$(ls -1 . | grep xcworkspace | wc -l)
-xproject_files=$(ls -1 . | grep xcodeproj | wc -l)
-
 function seek_and_project {
 	kind=$1
 	count=$(ls -1 . | grep ${kind} | wc -l)
