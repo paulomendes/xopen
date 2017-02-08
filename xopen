@@ -2,16 +2,13 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-workspace_files=$(ls -1 . | grep xcworkspace | wc -l)
-xproject_files=$(ls -1 . | grep xcodeproj | wc -l)
-
 function seek_and_project {
 	kind=$1
 	count=$(ls -1 . | grep ${kind} | wc -l)
 	found_flag=false
 
 	if [ "$count" -gt "1" ]; then
-		echo "You have more then one ${kind} file. I'm not able to open your project. Sorry!"
+		echo "You have more then one ${kind} file. I'm not able to open your project/playground. Sorry!"
 		exit
 	fi
 
@@ -33,6 +30,7 @@ function seek_and_project {
 
 seek_and_project "xcworkspace"
 seek_and_project "xcodeproj"
+seek_and_project "playground"
 
 if [ -f package.json ] && [ -d ios ]; then
 	cd ios && echo "Seems to be a React-Native application"
@@ -40,4 +38,4 @@ if [ -f package.json ] && [ -d ios ]; then
 	seek_and_project "xcodeproj"
 fi
 
-echo "There is no project in this folder, buddy!"
+echo "There is no project/playground in this folder, buddy!"
