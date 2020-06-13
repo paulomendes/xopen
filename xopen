@@ -31,6 +31,7 @@ function seek_and_project {
 seek_and_project "xcworkspace"
 seek_and_project "xcodeproj"
 seek_and_project "playground"
+seek_and_project "swift"
 
 if [ -f package.json ] && [ -d ios ]; then
 	cd ios && echo "Seems to be a React-Native application"
