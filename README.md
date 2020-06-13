@@ -4,7 +4,7 @@ XOPEN
 The ultimate word in Xcode project open!
 ----------------------------------------
 
-This is a short and usefull script to open your xcode projects from your terminal window. You just need to type *xopen* (A short and cute name for it) and have a fun coding your projects and playgrounds!
+This is a short and usefull script to open your xcode projects from your terminal window. You just need to type *xopen* (A short and cute name for it) and have a fun coding your projects, playgrounds and swift files!
 
 * * *
 
