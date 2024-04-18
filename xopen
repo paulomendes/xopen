@@ -28,15 +28,15 @@ function seek_and_project {
 	fi
 }
 
-seek_and_project "xcworkspace"
-seek_and_project "xcodeproj"
-seek_and_project "playground"
-seek_and_project "swift"
+seek_and_project ".xcworkspace"
+seek_and_project ".xcodeproj"
+seek_and_project ".playground"
+seek_and_project ".swift"
 
 if [ -f package.json ] && [ -d ios ]; then
 	cd ios && echo "Seems to be a React-Native application"
-	seek_and_project "xcworkspace"
-	seek_and_project "xcodeproj"
+	seek_and_project ".xcworkspace"
+	seek_and_project ".xcodeproj"
 fi
 
 echo "There is no project/playground in this folder, buddy!"
